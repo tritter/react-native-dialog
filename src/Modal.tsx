@@ -176,12 +176,9 @@ export class Modal extends Component<ModalProps, ModalState> {
               extrapolate: "clamp",
             }),
           };
-    if (Platform.OS === 'windows') {
+    if (Platform.OS === "windows") {
       return (
-        <WindowsModal
-          {...otherProps}
-          visible={visible}
-        >
+        <WindowsModal {...otherProps} visible={visible}>
           <TouchableWithoutFeedback onPress={onBackdropPress}>
             <Animated.View style={[styles.backdrop, backdropAnimatedStyle]} />
           </TouchableWithoutFeedback>
