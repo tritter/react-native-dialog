@@ -7,7 +7,7 @@ interface Props {
     children: object;
   }
 
-export default class WindowsModal extends Component<Props, {}> {
+class WindowsModal extends Component<Props, {}> {
   render () {
     if (!this.props.visible) return (<View />)
 
@@ -31,3 +31,5 @@ const styles = StyleSheet.create({
         alignItems: 'center'
       }
 });
+
+export default WindowsModal;
