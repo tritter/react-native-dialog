@@ -11,6 +11,7 @@ import {
   TouchableWithoutFeedback,
   ViewStyle,
 } from "react-native";
+import WindowsModal from "./WindowsModal";
 
 const MODAL_ANIM_DURATION = 300;
 const MODAL_BACKDROP_OPACITY = 0.3;
@@ -175,7 +176,33 @@ export class Modal extends Component<ModalProps, ModalState> {
               extrapolate: "clamp",
             }),
           };
-
+    if (Platform.OS === 'windows') {
+      return (
+        <WindowsModal
+          {...otherProps}
+          visible={visible}
+        >
+          <TouchableWithoutFeedback onPress={onBackdropPress}>
+            <Animated.View style={[styles.backdrop, backdropAnimatedStyle]} />
+          </TouchableWithoutFeedback>
+          {visible && (
+            <Animated.View
+              style={[styles.content, contentAnimatedStyle, contentStyle]}
+              pointerEvents="box-none"
+              // Setting "needsOffscreenAlphaCompositing" solves a janky elevation
+              // animation on android. We should set it only while animation
+              // to avoid using more memory than needed.
+              // See: https://github.com/facebook/react-native/issues/23090
+              needsOffscreenAlphaCompositing={["in", "out"].includes(
+                currentAnimation
+              )}
+            >
+              {children}
+            </Animated.View>
+          )}
+        </WindowsModal>
+      );
+    }
     return (
       <ReactNativeModal
         transparent
