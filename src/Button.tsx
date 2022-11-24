@@ -1,5 +1,4 @@
 import * as React from "react";
-import { ReactNode } from "react";
 import {
   Platform,
   StyleSheet,
@@ -14,7 +13,7 @@ import useTheme, { StyleBuilder } from "./useTheme";
 const COLOR = Platform.OS === "ios" ? "#007ff9" : "#169689";
 
 export interface DialogButtonProps extends TextProps {
-  label: ReactNode;
+  label: React.ReactNode;
   color?: ColorValue;
   bold?: boolean;
   disabled?: boolean;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LegacyRef, ReactNode } from "react";
+import type { LegacyRef, ReactNode } from "react";
 import {
   Platform,
   StyleSheet,
