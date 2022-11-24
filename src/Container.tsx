@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PropsWithChildren, ReactElement, ReactNode } from "react";
+import type { PropsWithChildren, ReactElement, ReactNode } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
