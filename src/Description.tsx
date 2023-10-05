@@ -6,6 +6,7 @@ import {
   PlatformColor,
   TextProps,
 } from "react-native";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
 import useTheme, { StyleBuilder } from "./useTheme";
 
 export type DialogDescriptionProps = TextProps;

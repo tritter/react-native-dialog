@@ -11,6 +11,7 @@ import {
   TextStyle,
   SwitchProps,
 } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import useTheme, { StyleBuilder } from "./useTheme";
 
 export interface DialogSwitchProps extends SwitchProps {

@@ -9,6 +9,7 @@ import {
   ViewStyle,
   StyleProp,
 } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import Modal from "./Modal";
 import useTheme, { StyleBuilder } from "./useTheme";
 import DialogTitle, { DialogTitleProps } from "./Title";

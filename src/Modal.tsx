@@ -11,6 +11,7 @@ import {
   TouchableWithoutFeedback,
   ViewStyle,
 } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import WindowsModal from "./WindowsModal";
 
 const MODAL_ANIM_DURATION = 300;

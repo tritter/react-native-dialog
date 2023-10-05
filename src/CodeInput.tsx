@@ -12,6 +12,7 @@ import {
   StyleProp,
   TextStyle,
 } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import useTheme from "./useTheme";
 
 export interface DialogCodeInputProps extends TextInputProps {
