@@ -6,9 +6,9 @@ import {
   TouchableOpacity,
   PlatformColor,
   TextProps,
-  TextPropTypes,
   ColorValue,
 } from "react-native";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
 import useTheme, { StyleBuilder } from "./useTheme";
 import PropTypes from "prop-types";
 
