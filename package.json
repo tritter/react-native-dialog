@@ -21,7 +21,7 @@
     "switch"
   ],
   "files": [
-    "src/"
+    "lib/"
   ],
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx",
