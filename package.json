@@ -31,9 +31,6 @@
     "build": "npx tsc",
     "install": "npx tsc"
   },
-  "peerDependencies": {
-    "react-native": ">=0.63.0"
-  },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
