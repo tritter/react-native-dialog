@@ -76,8 +76,5 @@
     "*.md": [
       "prettier --write"
     ]
-  },
-  "dependencies": {
-    "deprecated-react-native-prop-types": "^4.2.1"
   }
 }

@@ -7,8 +7,8 @@ import {
   View,
   PlatformColor,
   SwitchProps,
+  ViewPropTypes,
 } from "react-native";
-import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import useTheme, { StyleBuilder } from "./useTheme";
 import PropTypes from "prop-types";
 
