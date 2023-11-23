@@ -4,9 +4,9 @@ import {
   StyleSheet,
   Text,
   PlatformColor,
+  TextPropTypes,
   TextProps,
 } from "react-native";
-import { TextPropTypes } from "deprecated-react-native-prop-types";
 import useTheme, { StyleBuilder } from "./useTheme";
 
 export type DialogTitleProps = TextProps;

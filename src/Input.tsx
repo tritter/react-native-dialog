@@ -10,9 +10,9 @@ import {
   TextInputProps,
   TextStyle,
   ViewStyle,
+  ViewPropTypes,
   StyleProp,
 } from "react-native";
-import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import useTheme, { StyleBuilder } from "./useTheme";
 
 export interface DialogInputProps extends TextInputProps {
