@@ -8,7 +8,6 @@ import {
   PlatformColor,
   ViewStyle,
   StyleProp,
-  ViewPropTypes,
 } from "react-native";
 import Modal from "./Modal";
 import useTheme, { StyleBuilder } from "./useTheme";

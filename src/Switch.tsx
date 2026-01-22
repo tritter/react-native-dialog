@@ -10,7 +10,6 @@ import {
   StyleProp,
   TextStyle,
   SwitchProps,
-  ViewPropTypes,
 } from "react-native";
 import useTheme, { StyleBuilder } from "./useTheme";
 

@@ -9,7 +9,6 @@ import {
   PlatformColor,
   TextInputProps,
   ViewStyle,
-  ViewPropTypes,
   StyleProp,
   TextStyle,
 } from "react-native";

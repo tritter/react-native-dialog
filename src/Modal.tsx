@@ -9,7 +9,6 @@ import {
   StyleProp,
   StyleSheet,
   TouchableWithoutFeedback,
-  ViewPropTypes,
   ViewStyle,
 } from "react-native";
 import WindowsModal from "./WindowsModal";

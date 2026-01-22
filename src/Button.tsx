@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   PlatformColor,
   TextProps,
-  TextPropTypes,
   ColorValue,
 } from "react-native";
 import useTheme, { StyleBuilder } from "./useTheme";

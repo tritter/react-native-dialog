@@ -4,7 +4,6 @@ import {
   StyleSheet,
   Text,
   PlatformColor,
-  TextPropTypes,
   TextProps,
 } from "react-native";
 import useTheme, { StyleBuilder } from "./useTheme";
