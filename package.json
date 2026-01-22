@@ -28,8 +28,10 @@
     "lint:fix": "npm run lint --fix",
     "test": "npm run lint",
     "prettier": "prettier --ignore-path .gitignore --no-config --write 'src/*.ts?(x)'",
-    "build": "npx tsc",
-    "install": "npx tsc"
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.63.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
